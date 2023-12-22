@@ -30,7 +30,7 @@
     <section class="Home" id="Home">
       <div class="home-text">
         <span>Welcome To</span>
-        <h1>Starbuck Coffee</h1>
+        <h1 id="fallingText">Starbuck Coffee</h1>
         <h2>Free Coffee is a <br />tap away</h2>
         <a href="#" class="btn">Join Now</a>
       </div>
@@ -176,20 +176,6 @@
       </div>
       <p>&#169; Starbucks All Rights Resrved.</p>
     </section>
-
-    <script>
-      let menu = document.querySelector("#menu-icon");
-      let navbar = document.querySelector(".navbar");
-
-      menu.onclick = () => {
-        menu.classList.toggle("bx-x");
-        navbar.classList.toggle("active");
-      };
-
-      window.onscroll = () => {
-        menu.classList.remove("bx-x");
-        navbar.classList.remove("active");
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
